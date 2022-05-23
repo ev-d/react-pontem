@@ -1,4 +1,8 @@
-export const filterCardsSearch = (searchText, cardsList = []) => {
+export const filterCardsSearch = (searchText = '', cardsList = []) => {
+  if (!cardsList.length) {
+    return [];
+  }
+
   const lowSearchTextList = searchText.split(' ').map(word => word.toLowerCase());
 
   if (lowSearchTextList.length > 1) {
