@@ -10,7 +10,7 @@ import { CARD_SEARCH } from '../../../constants';
 import styles from './Content.module.css';
 
 const { searchParams } = new URL(router.getLocation());
-const initialSearchText = searchParams.get(CARD_SEARCH);
+const initialSearchText = searchParams.get(CARD_SEARCH) ?? '';
 
 const Content = ({ cardsList }) => {
   const [searchText, setSearchText] = useState(initialSearchText);
