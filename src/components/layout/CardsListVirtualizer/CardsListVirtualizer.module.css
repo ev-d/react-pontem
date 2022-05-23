@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 218px);
+  width: 100vw;
+  overflow-y: scroll,
+}
+
+.row {
+  height: 166px
+}
